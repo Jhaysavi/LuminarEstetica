@@ -1,0 +1,84 @@
+.container{
+    background: rgba(197, 255, 187, 0.20);
+
+    padding: 1rem;
+}
+
+.navContainer{
+    display: flex;
+    justify-content: space-evenly;
+
+    list-style: none;
+}
+
+.navItem a{
+    color: #15400E;
+    font-size: 25px;
+
+    text-decoration: none;
+}
+
+.navItem{
+    color: #15400E;
+    font-size: 25px;
+
+    text-decoration: none;
+}
+
+.navItem:hover{
+    font-weight: bold;
+
+    text-decoration: underline;
+}
+
+.whatsappLogo{
+    color: #0FA958;
+
+    font-size: 42px;
+}
+
+.logoContainer{
+    background: #15400E;
+
+    border-radius: 5px;
+}
+
+.logo{
+    width: 150px;
+}
+
+.topHeader{
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.burguerMenu{
+    display: none;
+}
+
+.burguerMenuIcon{
+    color: #15400E;
+
+    font-size: 52px;
+}
+
+.burguerMenuIcon{
+    display: none;
+}
+
+@media screen and (max-width:720px) {
+    .burguerMenu{
+        display: block;
+    }
+
+    .navContainer{
+        display: none;
+    }
+
+    .burguerMenuIcon{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}

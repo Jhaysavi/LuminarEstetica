@@ -1,0 +1,86 @@
+.container {
+    background-color: #F68BE5;
+}
+
+.footerText {
+    color: #ffffff;
+
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.text{
+    color: #ffffff;
+
+    font-size: 30px;
+}
+
+.logoContainer {
+    background: #15400E;
+
+    border-radius: 5px;
+    width: 150px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.line {
+    height: 1px;
+
+    background-color: #000000;
+    width: 1px;
+}
+
+.sociaMedia{
+    display: flex;
+
+    list-style: none;
+}
+
+.socialMediaIcon{
+    color: #000000;
+    
+    font-size: 52px;
+
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.title{
+    color: #ffffff;
+
+    font-size: 30px;
+    font-weight: 400;
+
+    margin-bottom: 1rem;
+}
+
+.containerContact{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin-top: 2rem;
+}
+
+.adreess{
+    color: #ffffff;
+
+    font-size: 20px;
+    font-weight: 400;
+
+    margin-top: 2rem;
+    text-align: center;
+}
+
+@media screen and (max-width:768px) {
+    .containerContact{
+        justify-content: space-evenly;
+        text-align: center;
+    }
+}

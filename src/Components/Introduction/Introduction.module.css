@@ -1,0 +1,53 @@
+.container{
+    background:#FFF0FD;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.title{
+    
+    font-size: 32px;
+    font-weight: bold;
+
+    text-align: center;
+}
+
+
+.text{
+    font-size: 25px;
+}
+
+.facialImage{
+    background: linear-gradient(271deg, #15400E 31.26%, rgba(21, 64, 14, 0.54) 99.46%);
+}
+
+.imagesContainer{
+    display: flex;
+}
+
+.containerText{
+    margin: 1rem;
+}
+
+@media screen and (max-width:1020px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .imagesContainer{
+        display: none;
+    }
+
+    .containerText{
+        width:100%;
+    }
+
+    .title{
+        margin-bottom: 1rem;
+    }
+}

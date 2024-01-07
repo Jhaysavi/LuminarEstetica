@@ -1,0 +1,92 @@
+.hero {
+    background-image: url('/src/assets/heroContato.png');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5rem;
+}
+
+.heroText {
+    color: #F00;
+
+    font-size: 40px;
+
+    width: 700px;
+
+    text-align: center;
+}
+
+.container {
+    background-image: linear-gradient(to right top, #b8f5c4, #b8f5c6, #b7f5c8, #b7f4c9, #b7f4cb, #a8f2d2, #9befda, #90ece2, #7fe4f2, #81d9fd, #94ccff, #afbdf8);}
+
+.title {
+    font-size: 48px;
+    font-weight: 600;
+
+    margin-bottom: 2rem;
+
+    text-align: center;
+}
+
+.label {
+    display: block;
+
+    font-size: 30px;
+}
+
+.input {
+    border-radius: 10px;
+
+    height: 52px;
+    width: 400px;
+    opacity: 0.6;
+}
+
+.input:focus {
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.error:focus {
+    outline: none !important;
+    border: 1px solid red;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.error{
+    color: red;
+}
+
+.button {
+    background-color: #01bac9;
+
+    border-radius: 10px;
+
+    color: #ffffff;
+
+    font-size: 30px;
+
+    margin-top: 3rem;
+
+    padding: 1rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.group{
+    margin-bottom: 2rem;
+}
+
+.service{
+    text-align: center;
+}

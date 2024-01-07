@@ -1,0 +1,14 @@
+.carouselImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    object-fit: cover;
+
+    position: relative;
+
+    width: 100%;
+}
+

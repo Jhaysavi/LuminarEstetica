@@ -1,0 +1,26 @@
+.container{
+    background:#e6e6e6;
+
+    padding: 2rem;
+}
+.header{
+    background-image: url('/src/assets/nossosServicos.jpg') ;
+    background-position: center;
+
+}
+ .title{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+
+    font-size: 58px;
+    font-weight: bold;
+
+    padding: 8rem;
+    text-align: center;
+ }
+
+ .containerCards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+ }
