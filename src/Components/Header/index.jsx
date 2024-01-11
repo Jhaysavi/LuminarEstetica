@@ -1,6 +1,5 @@
 import styles from './Header.module.css';
 import { IoLogoWhatsapp } from "react-icons/io";
-import { slide as Menu } from 'react-burger-menu';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
@@ -8,14 +7,9 @@ import { NavLink } from 'react-router-dom';
 function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
 
-    const handleMenuClick = () => {
-        setMenuOpen(!menuOpen)
-    }
-
-    const closeMenu = () => {
-        setMenuOpen(false);
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
     };
-
     return (
         <header className={styles.container}>
             <div className={styles.topHeader}>
@@ -30,27 +24,33 @@ function Header() {
             <ul>
                 <nav className={styles.navContainer}>
                     <NavLink to={"/"} className={styles.navItem}>Home</NavLink>
-                    <li className={styles.navItem}><a href="#">Procedimentos</a></li>
+                    <NavLink className={styles.navItem} to={"/servicos"} >Procedimentos</NavLink>
                     <NavLink to={"/contato"} className={styles.navItem}>Contato</NavLink>
                 </nav>
             </ul>
 
-           <div
-                
-            >
-                <GiHamburgerMenu className={styles.burguerMenuIcon} />
+            <div className={styles.hamburgerContainer}>
+                <div>
+                    <GiHamburgerMenu className={styles.hamburgerIcon} onClick={toggleMenu} />
+                </div>
+
+
+                {menuOpen && (
+                    <nav className={styles.menuContainer}>
+                        <NavLink to="/" className={styles.navItem} onClick={toggleMenu}>
+                            Home
+                        </NavLink>
+                        <a href="#" className={styles.navItem} onClick={toggleMenu}>
+                            Procedimentos
+                        </a>
+                        <NavLink to="/contato" className={styles.navItem} onClick={toggleMenu}>
+                            Contato
+                        </NavLink>
+                    </nav>
+                )}
+
             </div>
 
-            <div
-                isOpen={menuOpen}
-                onClose={closeMenu}
-                className={styles.burguerMenu}
-                
-            >
-                <li className={styles.navItem}><a href="#">Home</a></li>
-                <li className={styles.navItem}><a href="#">Procedimentos</a></li>
-                <li className={styles.navItem}><a href="#">Contato</a></li>
-            </div>
 
         </header>
     );

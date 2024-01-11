@@ -1,4 +1,4 @@
-import Card from '../ServiceCards';
+import Card from '../../Components/ServiceCards';
 import styles from './Services.module.css';
 
 function Services() {

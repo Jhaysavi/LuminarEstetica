@@ -83,4 +83,15 @@
         justify-content: space-evenly;
         text-align: center;
     }
+    .sociaMedia{
+        flex-direction: column;
+    }
+
+    .footerText{
+        font-size: 25px;
+    }
+
+    .text{
+        font-size: 25px;
+    }
 }
