@@ -24,7 +24,7 @@ function Contact() {
             .max(200, "Limite de 200 caracteres"),
         terms: yup
             .boolean()
-            .oneOf([true],"Para agendar é necessário aceitar os termos.")
+            .oneOf([true], "Para agendar é necessário aceitar os termos.")
     })
     return (
         <>
@@ -33,9 +33,8 @@ function Contact() {
             </section>
 
             <Formik
-                initialValues={{ name: "",email:"",phone:"",service:"",terms:false, }}
+                initialValues={{ name: "", email: "", phone: "", service: "", terms: false, }}
                 validationSchema={validationSchema}
-                
             >
                 <section className={styles.container}>
                     <h2 className={styles.title}>Agende sua avaliação!</h2>
@@ -80,7 +79,7 @@ function Contact() {
                             <div className={styles.service}>
                                 <Field
                                     as="textarea"
-                                    name="service"        
+                                    name="service"
                                     className={styles.service}
                                 />
                                 <ErrorMessage component="p" name="service" className={styles.error} />

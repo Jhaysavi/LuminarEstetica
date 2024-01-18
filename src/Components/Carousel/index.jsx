@@ -24,7 +24,7 @@ function Carousel() {
     return (
         <Slider  {...settings}>
             <div className={styles.container}>
-                <img src="src/assets/BOTOX.jpg" className={styles.carouselImage} alt="Apicação botox" />
+                <img src="https://github.com/Jhaysavi/LuminarEstetica/blob/master/src/assets/TOXINA%20BOTUL%C3%8DNICA.jpg" className={styles.carouselImage} alt="Apicação botox" />
             </div>
             <div className={styles.container}>
                 <img src="src/assets/high-angle-woman-getting-massaged-spa_23-2149871240.jpg" className={styles.carouselImage} alt="spa massagem facial" />
