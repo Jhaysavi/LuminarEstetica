@@ -1,8 +1,41 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Esthetic Clinic SPA
 
-Currently, two official plugins are available:
+Welcome to the repository showcasing my individual project developed as part of the Full-Stack course. This project is a Single Page Application (SPA) built using React.js and Vite, featuring a contact form with validation using the Yup and Formik libraries.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## 🛠 Skills
+Javascript, HTML, CSS, React.js...
+
+
+## How to Use
+
+Clone this repository.
+Navigate to the project directory.
+Install dependencies using your preferred package manager.
+
+```bash
+
+npm install
+```
+# or
+```
+yarn install
+```
+Run the application.
+
+```bash
+  npm run dev 
+  ```
+    
+# or
+  ```
+  yarn start
+  ```
+
+Feel free to explore the project, and if you have any questions or feedback, don't hesitate to reach out!
+
+Happy coding!
+
+
+    
