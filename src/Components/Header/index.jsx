@@ -29,25 +29,29 @@ function Header() {
                 </nav>
             </ul>
 
+            <div className={styles.hamburguerIconContainer}>
+                <GiHamburgerMenu className={styles.hamburgerIcon} onClick={toggleMenu} />
+            </div>
+            
             <div className={styles.hamburgerContainer}>
-                <div>
-                    <GiHamburgerMenu className={styles.hamburgerIcon} onClick={toggleMenu} />
+
+
+                <div className={styles.menuOptions}>
+                    {menuOpen && (
+                        <nav className={styles.menuContainer}>
+                            <NavLink to="/" className={styles.navItem} onClick={toggleMenu}>
+                                Home
+                            </NavLink>
+                            <a href="#" className={styles.navItem} onClick={toggleMenu}>
+                                Procedimentos
+                            </a>
+                            <NavLink to="/contato" className={styles.navItem} onClick={toggleMenu}>
+                                Contato
+                            </NavLink>
+                        </nav>
+                    )}
+
                 </div>
-
-
-                {menuOpen && (
-                    <nav className={styles.menuContainer}>
-                        <NavLink to="/" className={styles.navItem} onClick={toggleMenu}>
-                            Home
-                        </NavLink>
-                        <a href="#" className={styles.navItem} onClick={toggleMenu}>
-                            Procedimentos
-                        </a>
-                        <NavLink to="/contato" className={styles.navItem} onClick={toggleMenu}>
-                            Contato
-                        </NavLink>
-                    </nav>
-                )}
 
             </div>
 

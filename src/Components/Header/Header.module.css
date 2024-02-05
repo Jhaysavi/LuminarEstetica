@@ -54,7 +54,7 @@
     align-items: center;
 }
 
-.hamburgerContainer {
+.hamburgerIconContainer {
     display: none;
 }
 
@@ -77,9 +77,10 @@
         display: none;
     }
 
-    .hamburgerContainer {
+    .hamburguerIconContainer {
         display: flex;
         flex-direction: row-reverse;
+       
     }
 
     .menuContainer {
@@ -88,9 +89,15 @@
         align-items: center;
 
         margin-top: 2rem;
+        padding: 1rem;
     }
 
     .navItem{
         margin-bottom: 1rem;
+    }
+
+    .hamburgerContainer{
+
+        padding: 1.5rem;
     }
 }

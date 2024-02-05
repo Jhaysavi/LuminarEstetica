@@ -35,16 +35,18 @@ function Contact() {
             <Formik
                 initialValues={{ name: "", email: "", phone: "", service: "", terms: false, }}
                 validationSchema={validationSchema}
+              
             >
                 <section className={styles.container}>
                     <h2 className={styles.title}>Agende sua avaliação!</h2>
 
-                    <form action="https://formsubmit.co/b1b13c5302d41dd14be8a1bdbcab5697" method='POST' className={styles.form} >
+                    <form action="https://formsubmit.co/b1b13c5302d41dd14be8a1bdbcab5697" method="POST" className={styles.form} >
 
                         <fieldset className={styles.group}>
 
                             <label htmlFor="name" className={styles.label}>Nome</label>
                             <Field
+                                id="name"
                                 type="text"
                                 name="name"
                                 className={styles.input}
@@ -55,6 +57,7 @@ function Contact() {
                         <fieldset className={styles.group}>
                             <label htmlFor="email" className={styles.label}>E-mail</label>
                             <Field
+                                id="email"
                                 type="email"
                                 name="email"
                                 className={styles.input}
@@ -66,6 +69,7 @@ function Contact() {
                         <fieldset className={styles.group}>
                             <label htmlFor="phone" className={styles.label}>Telefone(com DDD)</label>
                             <Field
+                                id="phone"
                                 type="tel"
                                 name="phone"
                                 className={styles.input}
@@ -78,6 +82,7 @@ function Contact() {
                             <label htmlFor="service" className={styles.label}>Escreva aqui os serviços de seu interesse:</label>
                             <div className={styles.service}>
                                 <Field
+                                    id="service"
                                     as="textarea"
                                     name="service"
                                     className={styles.service}
@@ -88,6 +93,7 @@ function Contact() {
 
                         <fieldset className={styles.group}>
                             <Field
+                                id="terms"
                                 type="checkbox"
                                 name="terms"
                             />
